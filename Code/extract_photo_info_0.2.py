@@ -147,7 +147,7 @@ def dump_to_csv():
         headers.append("tag")
     try:
         print "\n[+] Writing CSV file..."
-        with codecs.open(filename+".csv", "wb", "utf-8") as f:
+        with codecs.open("../Output/"+filename+".csv", "wb", "utf-8") as f:
             file_headers = ",".join(headers)
             f.write(file_headers + "\n")
             for photo in all_photos:
