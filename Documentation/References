@@ -1,0 +1,27 @@
+Used python-flickr API: 
+Beej's Python Flickr API
+https://stuvel.eu/flickrapi
+
+
+Must get keys from:
+http://www.flickr.com/services/api/keys/apply/
+
+
+
+Flickr API documentation calls for latitude and longitude
+lat (Optional)
+    A valid latitude, in decimal format, for doing radial geo queries.
+
+    Geo queries require some sort of limiting agent in order to prevent the database from crying. This is basically like the check against "parameterless searches" for queries without a geo component.
+
+    A tag, for instance, is considered a limiting agent as are user defined min_date_taken and min_date_upload parameters — If no limiting factor is passed we return only photos added in the last 12 hours (though we may extend the limit in the future).
+lon (Optional)
+    A valid longitude, in decimal format, for doing radial geo queries.
+
+    Geo queries require some sort of limiting agent in order to prevent the database from crying. This is basically like the check against "parameterless searches" for queries without a geo component.
+
+    A tag, for instance, is considered a limiting agent as are user defined min_date_taken and min_date_upload parameters — If no limiting factor is passed we return only photos added in the last 12 hours (though we may extend the limit in the future).
+radius (Optional)
+    A valid radius used for geo queries, greater than zero and less than 20 miles (or 32 kilometers), for use with point-based geo queries. The default value is 5 (km).
+radius_units (Optional)
+    The unit of measure when doing radial geo queries. Valid options are "mi" (miles) and "km" (kilometers). The default is "km".
